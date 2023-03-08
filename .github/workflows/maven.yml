@@ -3,7 +3,7 @@ on: push
 
 jobs:
   api-test-job:
-    name: rest assured
+    name: rest assured in pwsh
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
