@@ -27,7 +27,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+    - name: run API test
       run: mvn -B clean test --file pom.xml
 
  
