@@ -1,14 +1,14 @@
-name: Test PowerShell on Ubuntu
+name: API test with rest assured in PowerShell 
 on: push
 
 jobs:
-  pester-test:
-    name: Pester test
+  api-test-job:
+    name: rest assured
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Perform a Pester test from the Tests.ps1 file
+      - name: Run the API-test in pwsh
         shell: pwsh
         run: |
           mvn clean test
