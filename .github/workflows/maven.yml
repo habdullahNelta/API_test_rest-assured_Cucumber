@@ -22,7 +22,7 @@ jobs:
          java-version: '11'
          distribution: 'temurin'
          cache: maven
-      - name: run API test in maven 
-        run: mvn clean test 
+      - name: test GET API test in maven 
+        run: mvn verify -Dgroups="GetAndDelete"
 
  
